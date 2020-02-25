@@ -27,7 +27,10 @@ export class SuppliesController {
   }
 
   @Put('/:id')
-  editSupplies(@Param('id') suppliesId: string, @Body() newSupplies: SuppliesDTO): boolean {
+  editSupplies(
+    @Param('id') suppliesId: string,
+    @Body() newSupplies: SuppliesDTO,
+  ): boolean {
     return this.suppliesService.update(suppliesId, newSupplies);
   }
 

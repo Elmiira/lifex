@@ -9,5 +9,5 @@ export interface ISupplies {
   stock: number;
   std: number;
   category: SuppliesCategories;
-  isActive: boolean,
+  isActive: boolean;
 }
